@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Shrinkhand';
+    src: url('font/Shrikhand-Regular.otf');
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('font/Roboto-Regular-webfont.eot');
+    src: url('font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('font/Roboto-Regular-webfont.woff') format('woff'),
+         url('font/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*body*/
+
+body {
+    font-family: "robotoregular", "Sans serif";
+    margin: 0;
+    width: 100%;
+}
+
+
+/*header*/
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+h1 {
+    font-family: "Shrinkhand";
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-arrow {
+    font-size: 1.5em;
+
+}
+
+header img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+
+}
+/*main*/
+
+.container-search {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+input {
+    border: none;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.map {
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+#container-info {
+    display: flex;
+    justify-content: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore {
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+
+.explore a {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#container-tuto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#container-tuto ol {
+    padding: 0;
+}
+
+ol li {
+    margin: 1.5em;
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+
+    width: 400px;
+    border-radius: 10px;
+    margin: 25px 0 25px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.card img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.description {
+    padding: 0 0 5px 10px;
+}
+
+h3 {
+    margin: 2px 0 2px 0;
+}
+
+.description p {
+    margin: 2px 0 2px 0;
+    font-size: 0,98em;
+}
+
+header h2 {
+    font-family: 'Shrinkhand';
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.menus{
+    border-radius: 20px;
+    padding: 25px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menus h3 {
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.border {
+    margin-top: 4px;
+    height: 4px;
+    width: 45px 
+}
+
+.menu {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.menu h4 {
+    margin: 10px 0 5px 0;
+}
+
+.menu p {
+    margin: 5px 0 10px 0;
+}
+
+.menu-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.04em;
+}
+
+.btn-order {
+    margin: 20px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/*footer*/ 
+
+#container-footer {
+    padding: 10px;
+}
+
+footer h3 {
+    font-family: "Shrinkhand";
+    font-size: 1.2em;
+    font-weight:lighter;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+
+#foot {
+    list-style-type: none;
+    padding: 0;
+}

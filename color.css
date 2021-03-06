@@ -1,0 +1,80 @@
+/*body*/
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+/*header*/
+
+a {
+    color: #000000;
+}
+
+a:visited {
+    color:#000000;
+}
+
+/*main*/
+
+.container-search {
+    background-color: rgb(236, 232, 232);
+}
+
+input {
+    background-color: rgb(236, 232, 232);
+}
+
+.explore {
+    background-color: #9356DC;
+}
+
+.explore a {
+    color: #ffffff;
+}
+
+ol li {
+    background-color: rgb(236, 232, 232);
+}
+
+.card {
+    box-shadow: 0 0 20px #0000002e;
+}
+
+p {
+    color: #000000;
+}
+
+main h3 {
+    color: #000000;
+}
+
+.menus {
+    background-color: #f2f2f2;
+}
+
+.border {
+    background-color: #99e2d0;
+}
+
+.menu {
+    background-color: #ffffff;
+}
+
+.btn-order {
+    background-color: #9356DC;
+    color: #ffffff;
+}
+
+/*footer*/
+
+footer {
+    background-color: #353535;
+    color: #ffffff;
+}
+
+#foot a {
+    color:#ffffff;
+}
