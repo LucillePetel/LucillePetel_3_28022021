@@ -2,42 +2,39 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="color.css" />
+        <link rel="stylesheet" href="public/css/style.css" />
 
         <title>ohmyfood</title>
     </head>
 
     <body>
-        <div id="bloc-page">
+        <div>
             <header class="head">
-                <h1>
+                <h1 class="head__title">
                     <a href="#">ohmyfood</a>
-                </h1>
-                
+                </h1>   
             </header>
 
             <main>
-                <section>
-                    <form class="container-search"  action="search.php" method="get">
-                        <span class="map">
-                        <i class="fas fa-map-marker-alt"></i>
-                        </span>
-                        <input type="text" name="search" placeholder="Paris, Belleville" />
-                    </form>
+                <!--LOCALISATION-->
+                <section class="local">
+                    <i class="fas fa-map-marker-alt local__icon"></i>
+                    <p class="local__text">Paris, Belleville </p>
                 </section>
 
-                <section id="container-info">
-                    <div id="info">
+                <!--INFO-->
+                <section>
+                    <div class="info">
                         <h2>Réservez le menu qui vous convient</h2>
                         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                        <div class="explore">
+                        <div class="info__link">
                             <a href="#">Explorer nos restaurants</a>
                         </div>
                     </div>        
                 </section>
 
-                <section id="container-tuto">
+                <!--TUTO-->
+                <section class="tuto">
                     <h2>Fonctionement</h2>
                     <ol>
                         <li><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</li>
@@ -46,100 +43,97 @@
                     </ol>
                 </section>
 
-                <section class="container-cards">
-                    <div>
-                        <h2>Restaurants</h2>
-                        <div class="cards">
-                            <article class="card">
-                                <a href="la_palette_du_gout.html">
+                <!--LISTE DES RESTAURANTS-->
+                <section class="restaurant">
+                    <h2 class="restaurant__title">Restaurants</h2>
+                    <div class="restaurant__container">
+                        <article class="card">
+                            <a href="la_palette_du_gout.html">
+                                <div>
+                                    <figure>
+                                        <img src="images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du goût" />
+                                    </figure>
+                                </div>
+                                <div>
                                     <div>
-                                        <figure>
-                                            <img src="images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du goût" />
-                                        </figure>
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontant</p>  
                                     </div>
-                                    <div class="description">
-                                        <div>
-                                            <h3>La palette du goût</h3>
-                                            <p>Ménilmontant</p>  
-                                        </div>
-                                        <div>
-                                            <!--Placer les coeurs-->
-                                        </div>
+                                    <div>
+                                        <!--Placer les coeurs-->
                                     </div>
-                                </a> 
-                            </article>    
+                                </div>
+                            </a> 
+                        </article>    
 
-                            <article class="card">
-                                <a href="la_note_enchantee.html">
+                        <article class="card">
+                            <a href="la_note_enchantee.html">
+                                <div>
+                                    <figure>
+                                        <img src="images/restaurants/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
+                                    </figure>
+                                </div>
+                                <div>
                                     <div>
-                                        <figure>
-                                            <img src="images/restaurants/la_note_enchantee.jpg" alt="Restaurant La note enchantée" />
-                                        </figure>
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>  
                                     </div>
-                                    <div class="description">
-                                        <div>
-                                            <h3>La note enchantée</h3>
-                                            <p>Charonne</p>  
-                                        </div>
-                                        <div>
-                                            <!--Placer les coeurs-->
-                                        </div>
-                                    </div>
-                                </a> 
-                            </article>
-                            
-                            <article class="card">
-                                <a href="a_la_francaise.html">
                                     <div>
-                                        <figure>
-                                            <img src="images/restaurants/a_la_francaise.jpg" alt="Restaurant A la française" />
-                                        </figure>
+                                        <!--Placer les coeurs-->
                                     </div>
-                                    <div class="description">
-                                        <div>
-                                            <h3>À la française</h3>
-                                            <p>Cité Rouge</p>  
-                                        </div>
-                                        <div>
-                                            <!--Placer les coeurs-->
-                                        </div>
-                                    </div>
-                                </a> 
-                            </article> 
-                            
-                            <article class="card">
-                                <a href="le_delice_des_sens.html">
-                                    <div>
-                                        <figure>
-                                            <img src="images/restaurants/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
-                                        </figure>
-                                    </div>
-                                    <div class="description">
-                                        <div>
-                                            <h3>Le délice des sens</h3>
-                                            <p>Folie-Méricourt</p>  
-                                        </div>
-                                        <div>
-                                            <!--Placer les coeurs-->
-                                        </div>
-                                    </div>
-                                </a> 
-                            </article> 
-                        </div>
+                                </div>
+                            </a> 
+                        </article>
                         
+                        <article class="card">
+                            <a href="a_la_francaise.html">
+                                <div>
+                                    <figure>
+                                        <img src="images/restaurants/a_la_francaise.jpg" alt="Restaurant A la française" />
+                                    </figure>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3>À la française</h3>
+                                        <p>Cité Rouge</p>  
+                                    </div>
+                                    <div>
+                                        <!--Placer les coeurs-->
+                                    </div>
+                                </div>
+                            </a> 
+                        </article> 
+                        
+                        <article class="card">
+                            <a href="le_delice_des_sens.html">
+                                <div>
+                                    <figure>
+                                        <img src="images/restaurants/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens" />
+                                    </figure>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>  
+                                    </div>
+                                    <div>
+                                        <!--Placer les coeurs-->
+                                    </div>
+                                </div>
+                            </a> 
+                        </article> 
                     </div>
-
                 </section>
             </main>
 
 
             <footer>
-                <div id="container-footer">
-                    <h3>ohmyfood</h3>
+                <div class="foot">
+                    <h3 class="foot__title">ohmyfood</h3>
                     <nav>
-                        <ul id="foot">
-                            <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                            <li><a href="#"><i class="fas fa-hands-helping"></i>                               Devenir partenaire</a></li>
+                        <ul class="foot__list">
+                            <li><a href="#"><i class="foot__icon fas fa-utensils"></i>Proposer un restaurant</a></li>
+                            <li><a href="#"><i class="foot__icon fas fa-hands-helping"></i>                               Devenir partenaire</a></li>
                             <li><a href="#">Mentions légales</a></li>
                             <li><a href="mailto:fake.adress@gmail.fr">Contact</a></li>
                         </ul>

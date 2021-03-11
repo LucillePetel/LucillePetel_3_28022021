@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Shrinkhand";
+  src: url("font/Shrikhand-Regular.otf");
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("font/Roboto-Regular-webfont.eot");
+  src: url("font/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("font/Roboto-Regular-webfont.woff2") format("woff2"), url("font/Roboto-Regular-webfont.woff") format("woff"), url("font/Roboto-Regular-webfont.ttf") format("truetype"), url("font/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "robotoregular";
+  margin: 0;
+  width: 100%;
+}
+
+.head {
+  font-family: "Shrinkhand";
+}
+
+a {
+  text-decoration: none;
+}
+
+.head__title {
+  text-align: center;
+  padding: 3px;
+}
+.head__title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.foot {
+  padding: 10px;
+  background-color: #343434;
+  color: #fff;
+}
+.foot__title {
+  font-family: "Shrinkhand";
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.foot__list {
+  list-style-type: none;
+  padding: 0;
+}
+.foot__icon {
+  margin-right: 10px;
+}
+.foot a {
+  color: #fff;
+}
+
+/*LOCALISATION*/
+.local {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+.local__icon {
+  font-size: 1.3em;
+  margin: 1.2rem 0.9rem 1.2rem 0;
+}
+.local__text {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+/*INFO*/
+.container-info {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__link {
+  background-color: #9356dc;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+}
+.info a {
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff;
+}
+
+/*TUTO*/
+.tuto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tuto ol {
+  padding: 0;
+  margin: 0;
+}
+.tuto ol li {
+  margin: 1.5em;
+  padding: 15px 20px 15px 20px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+/*LISTE DES RESTAURANTS*/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  margin: 25px 0 25px 0;
+}
+.card img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card figure {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

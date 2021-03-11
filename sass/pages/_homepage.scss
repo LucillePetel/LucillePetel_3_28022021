@@ -1,0 +1,82 @@
+
+/*LOCALISATION*/
+.local {
+    display: flex;
+    justify-content: center;
+    background-color: $colour-background;
+
+    &__icon {
+        font-size: 1.3em;
+        margin: 1.2rem 0.9rem 1.2rem 0
+    }
+    &__text {
+        font-size: 1.15em;
+        font-weight: bold;
+        }
+}
+
+/*INFO*/
+
+.container-info {
+    display: flex;
+    justify-content: center;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__link {
+        background-color: $colour-primary;
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px; 
+    }
+    a {
+        font-weight: bold;
+        font-size: 1em;
+        color: $colour-white; 
+    }
+}
+
+/*TUTO*/ 
+
+.tuto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ol {
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 1.5em;
+            padding: 15px 20px 15px 20px;
+            border-radius: 15px;
+            width: 100%;
+            background-color: $colour-background;  
+        }
+    }
+}
+
+/*LISTE DES RESTAURANTS*/
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.card{
+    width: 400px;
+    border-radius: 10px;
+    margin: 25px 0 25px 0;
+    img{
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    figure {
+        margin: 0;
+    }
+}

@@ -1,0 +1,8 @@
+.head__title {
+    text-align: center;
+    padding: 3px;
+        & a {
+            text-decoration: none;
+            color:  $colour-black;
+        }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lucillepetel_3_28022021",
+  "version": "1.0.0",
+  "description": "LucillePetel_3_28022021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucillePetel/LucillePetel_3_28022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucillePetel/LucillePetel_3_28022021/issues"
+  },
+  "homepage": "https://github.com/LucillePetel/LucillePetel_3_28022021#readme"
+}
