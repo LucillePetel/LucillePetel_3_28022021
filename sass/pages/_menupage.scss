@@ -1,0 +1,56 @@
+.container-menu {
+    border-radius: 2rem 2rem 0 0;
+    padding: 25px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colour-background;
+    width: 85%;
+    h3{
+        font-weight: lighter;
+        margin-top: 30px; 
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    &__icon {
+        font-size: 1.4rem;
+        margin: 1rem 1.5rem 0 0;
+    }
+    h2 {
+        font-family: 'Shrinkhand';
+    }
+}
+
+.menus{
+    &__title {
+        margin-bottom: 0.2rem;
+    }
+    &__border {
+        margin-top: 4px;
+        height: 4px;
+        width: 45px;
+        background-color: $colour-tertiary;
+    }
+}
+
+.menu {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: $colour-white;
+    &__text {
+        h4{
+            margin: 0.5rem 0 0.5rem 0;
+        }
+        p {
+            margin: 0.5rem 0 0.5rem 0; 
+        }
+    }
+}
+

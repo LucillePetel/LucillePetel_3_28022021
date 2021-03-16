@@ -27,24 +27,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__link {
-        background-color: $colour-primary;
-        padding: 15px 20px 15px 20px;
-        border-radius: 30px; 
-    }
-    a {
-        font-weight: bold;
-        font-size: 1em;
-        color: $colour-white; 
+    h2, p {
+       flex-wrap: wrap;
+       width: 90%;
+       text-align: center; 
     }
 }
 
 /*TUTO*/ 
 
+.container-tuto {
+    padding: 2rem 1rem 2rem 1rem; 
+}
+
 .tuto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     ol {
         padding: 0;
         margin: 0;
@@ -52,9 +49,12 @@
             margin: 1.5em;
             padding: 15px 20px 15px 20px;
             border-radius: 15px;
-            width: 100%;
-            background-color: $colour-background;  
+            background-color: $colour-background; 
+            max-width: 1024px;
         }
+    }
+    &__icon {
+        margin-right: 1rem;
     }
 }
 
@@ -62,21 +62,50 @@
 
 .restaurant{
     display: flex;
-    flex-direction: column;
-    align-items: center;   
+    flex-direction: column; 
+    background-color: $colour-background;
+    padding: 0 1rem 2rem 1rem;
+    &__block {
+        margin: auto;
+    }
 }
 
 .card{
-    width: 400px;
-    border-radius: 10px;
-    margin: 25px 0 25px 0;
+    max-width: 1024px;
+    border-radius: 1rem;
+    margin: 25px 0.5rem 25px 0.5rem;
+    background-color: $colour-white;
+    color: $colour-black;
+    position: relative;
     img{
         height: 170px;
         width: 100%;
         object-fit: cover;
-        border-radius: 10px 10px 0 0;
+        border-radius: 1rem 1rem 0 0;
     }
     figure {
         margin: 0;
+    }
+    &__text {
+        padding: 0.5rem;
+        h3, p {
+        margin: 0.3rem 0 0.3rem 1rem;
+        font-size: 1.2rem;
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        font-size: 2rem;
+        margin: 1rem 1.5rem 1rem 0;
+    }
+    &__badge {
+        background-color: $colour-tertiary;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 }

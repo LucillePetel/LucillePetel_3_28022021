@@ -1,0 +1,10 @@
+.button {
+    background-color: $colour-secondary;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    padding: 0.8rem 3.2rem 0.8rem 3.2rem;
+    margin-top: 1rem;
+    border-radius: 30px; 
+    font-size: 1.1em;
+    color: $colour-white;
+
+}
