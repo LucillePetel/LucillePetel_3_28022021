@@ -1,14 +1,16 @@
 .container-menu {
     border-radius: 2rem 2rem 0 0;
-    padding: 25px 20px 30px 20px;
+    padding: 25px 10px 30px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $colour-background;
-    width: 85%;
+    width: 96%;
+    position: relative;
+    top: 25rem;
     h3{
         font-weight: lighter;
-        margin-top: 30px; 
+        margin-top: 20px; 
     }
 }
 
@@ -24,7 +26,8 @@
     }
 }
 
-.menus{
+.menus {
+    width: 95%;
     &__title {
         margin-bottom: 0.2rem;
     }
@@ -36,21 +39,86 @@
     }
 }
 
+
 .menu {
+    box-shadow: 0.1rem 0.1rem 1rem 0.5rem #cccccc;
     display: flex;
-    width: 400px;
     justify-content: space-between;
-    padding: 0 15px 0 15px;
-    margin-top: 10px;
-    border-radius: 15px;
+    padding-left: 1.2rem;
+    margin-top: 1.5rem;
+    border-radius: 1.1rem;
     background-color: $colour-white;
+    color: $colour-black;
+    overflow: hidden;
+    position: relative;
+    transform: scaleY(0);
     &__text {
         h4{
             margin: 0.5rem 0 0.5rem 0;
+            flex-wrap: nowrap;
         }
         p {
             margin: 0.5rem 0 0.5rem 0; 
         }
     }
+    &__price {
+        position: absolute;
+        bottom: 0;
+        right: 1.5rem;
+        font-weight: 650;
+        transition-duration: 0.5s;
+    }
+    &:hover .menuCheck {
+        transform: translateX(0rem);
+        transition: transform 0.5s;
+        transform: scaleY(1);
+    }
+    &:hover .menu__price {
+        margin-right: 3.5rem;
+        transition-duration: 0.5s;
+    }
+    &:hover .menuCheck__icon{
+        transform: rotate(2turn);
+        transition-duration: 0.5s;
+    }
 }
 
+
+.delay-first {
+    animation: meal-appear 0.3s linear forwards;
+    animation-delay: 0s;
+}
+.delay-second {
+    animation: meal-appear 0.3s linear forwards;
+    animation-delay: 0.2s;
+}
+.delay-third {
+    animation: meal-appear 0.3s linear forwards;
+    animation-delay: 0.4s;
+}
+.delay-fourth {
+    animation: meal-appear 0.3s linear forwards;
+    animation-delay: 0.6s;
+}
+
+.menuCheck {
+    background-color: $colour-tertiary;
+    width: 3.5rem;
+    border-radius: 0 1.1rem 1.1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(3.5rem);
+    transition-duration: 0.5s;
+    &__icon {
+        border-radius: 2rem;
+        background-color: $colour-white;
+        font-size: 1rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        color: $colour-tertiary;
+    }
+}

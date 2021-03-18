@@ -1,0 +1,23 @@
+@keyframes meal-appear {
+    0% {
+        transform: scaleY(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleY(.18);
+    }
+    35% {
+        transform: scaleY(.4);
+    }
+    60% {
+        transform: scaleY(.7);
+        opacity: 1;
+    }
+    80% {
+        transform: scaleY(.85); 
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+

@@ -40,6 +40,28 @@ a {
   color: #fff;
 }
 
+@keyframes meal-appear {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleY(0.18);
+  }
+  35% {
+    transform: scaleY(0.4);
+  }
+  60% {
+    transform: scaleY(0.7);
+    opacity: 1;
+  }
+  80% {
+    transform: scaleY(0.85);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 header {
   width: 100%;
 }
@@ -66,10 +88,13 @@ header {
   object-fit: cover;
   width: 100%;
   height: 30rem;
+  position: absolute;
 }
 
 footer {
   width: 100%;
+  position: relative;
+  top: 25rem;
 }
 
 .foot {
@@ -201,16 +226,18 @@ footer {
 
 .container-menu {
   border-radius: 2rem 2rem 0 0;
-  padding: 25px 20px 30px 20px;
+  padding: 25px 10px 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f3f3f3;
-  width: 85%;
+  width: 96%;
+  position: relative;
+  top: 25rem;
 }
 .container-menu h3 {
   font-weight: lighter;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .title {
@@ -225,6 +252,9 @@ footer {
   font-family: "Shrinkhand";
 }
 
+.menus {
+  width: 95%;
+}
 .menus__title {
   margin-bottom: 0.2rem;
 }
@@ -236,19 +266,86 @@ footer {
 }
 
 .menu {
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #cccccc;
   display: flex;
-  width: 400px;
   justify-content: space-between;
-  padding: 0 15px 0 15px;
-  margin-top: 10px;
-  border-radius: 15px;
+  padding-left: 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 1.1rem;
   background-color: #fff;
+  color: #000000;
+  overflow: hidden;
+  position: relative;
+  transform: scaleY(0);
 }
 .menu__text h4 {
   margin: 0.5rem 0 0.5rem 0;
+  flex-wrap: nowrap;
 }
 .menu__text p {
   margin: 0.5rem 0 0.5rem 0;
+}
+.menu__price {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+  font-weight: 650;
+  transition-duration: 0.5s;
+}
+.menu:hover .menuCheck {
+  transform: translateX(0rem);
+  transition: transform 0.5s;
+  transform: scaleY(1);
+}
+.menu:hover .menu__price {
+  margin-right: 3.5rem;
+  transition-duration: 0.5s;
+}
+.menu:hover .menuCheck__icon {
+  transform: rotate(2turn);
+  transition-duration: 0.5s;
+}
+
+.delay-first {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0s;
+}
+
+.delay-second {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.2s;
+}
+
+.delay-third {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.4s;
+}
+
+.delay-fourth {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.menuCheck {
+  background-color: #99e2d0;
+  width: 3.5rem;
+  border-radius: 0 1.1rem 1.1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(3.5rem);
+  transition-duration: 0.5s;
+}
+.menuCheck__icon {
+  border-radius: 2rem;
+  background-color: #fff;
+  font-size: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=style.css.map */
