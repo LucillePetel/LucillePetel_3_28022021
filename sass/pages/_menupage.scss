@@ -8,6 +8,12 @@
     width: 96%;
     position: relative;
     top: 25rem;
+    @media screen and (min-width: 1024px) and (max-width:1349px) {
+        width: 95%;
+    }
+    @media screen and (min-width: 1350px){
+        width: 70%;
+    }
     h3{
         font-weight: lighter;
         margin-top: 20px; 
@@ -17,17 +23,20 @@
 .title {
     display: flex;
     justify-content: space-between;
-    &__icon {
-        font-size: 1.4rem;
-        margin: 1rem 1.5rem 0 0;
-    }
     h2 {
         font-family: 'Shrinkhand';
+        padding-left: 1rem;
     }
 }
 
 .menus {
     width: 95%;
+    display: grid;
+    @media screen and (min-width: 1024px){
+        grid-template-columns: repeat(3,1fr) ;
+        column-gap: 1rem;
+        justify-content: center;
+    }
     &__title {
         margin-bottom: 0.2rem;
     }
@@ -37,7 +46,9 @@
         width: 45px;
         background-color: $colour-tertiary;
     }
+    
 }
+
 
 
 .menu {
@@ -53,9 +64,9 @@
     position: relative;
     transform: scaleY(0);
     &__text {
+        white-space: nowrap;
         h4{
             margin: 0.5rem 0 0.5rem 0;
-            flex-wrap: nowrap;
         }
         p {
             margin: 0.5rem 0 0.5rem 0; 

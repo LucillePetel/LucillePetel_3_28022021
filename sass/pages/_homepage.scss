@@ -3,8 +3,7 @@
 .local {
     display: flex;
     justify-content: center;
-    background-color: $colour-background;
-
+    background-color: darken($colour-background, 5%);
     &__icon {
         font-size: 1.3em;
         margin: 1.2rem 0.9rem 1.2rem 0
@@ -20,6 +19,9 @@
 .container-info {
     display: flex;
     justify-content: center;
+    background-color: $colour-background;
+    padding: 2.5rem 0 4rem 0;
+
 }
 
 
@@ -42,15 +44,31 @@
 
 .tuto {
     width: 100%;
+    @media screen and (min-width: 1024px) and (max-width:1349px) {
+        width: 95%;
+        margin: auto;
+    }
+    @media screen and (min-width: 1350px){
+        width: 70%;
+        margin: auto;
+    }
     ol {
         padding: 0;
         margin: 0;
+        @media screen and (min-width: 1024px){
+            display: flex;
+            justify-content: space-between;
+        }
+    
         li {
             margin: 1.5em;
             padding: 15px 20px 15px 20px;
             border-radius: 15px;
             background-color: $colour-background; 
             max-width: 1024px;
+            @media screen and (min-width: 1024px){
+                width: 400px;
+            }
         }
     }
     &__icon {
@@ -67,6 +85,18 @@
     padding: 0 1rem 2rem 1rem;
     &__block {
         margin: auto;
+        @media screen and (min-width: 1024px){
+            width: 70%;
+        }
+        @media screen and (min-width: 1024px) and (max-width:1349px){
+            width: 95%;
+        }
+    }
+    &__container{
+        @media screen and (min-width: 1024px){
+            margin: auto;
+            display: flex;
+        }
     }
 }
 
@@ -96,10 +126,6 @@
     &__box {
         display: flex;
         justify-content: space-between;
-    }
-    &__icon {
-        font-size: 2rem;
-        margin: 1rem 1.5rem 1rem 0;
     }
     &__badge {
         background-color: $colour-tertiary;

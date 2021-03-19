@@ -2,9 +2,13 @@
     background-color: $colour-secondary;
     background: linear-gradient($colour-secondary, $colour-primary);
     padding: 0.8rem 3.2rem 0.8rem 3.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 30px; 
     font-size: 1.1em;
     color: $colour-white;
-
+    transition: transform .7s;
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
 }

@@ -34,10 +34,15 @@ a {
   background-color: #ff79da;
   background: linear-gradient(#ff79da, #9356dc);
   padding: 0.8rem 3.2rem 0.8rem 3.2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 30px;
   font-size: 1.1em;
   color: #fff;
+  transition: transform 0.7s;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
 @keyframes meal-appear {
@@ -90,15 +95,22 @@ header {
   height: 30rem;
   position: absolute;
 }
+.head__box {
+  box-shadow: 0 0.4rem 1rem silver;
+}
 
 footer {
   width: 100%;
+  background-color: #343434;
+}
+
+.container-foot {
   position: relative;
   top: 25rem;
 }
 
 .foot {
-  padding: 10px;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   background-color: #343434;
   color: #fff;
 }
@@ -117,12 +129,23 @@ footer {
 .foot a {
   color: #fff;
 }
+@media screen and (min-width: 1024px) {
+  .foot {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1349px) {
+  .foot {
+    width: 95%;
+  }
+}
 
 /*LOCALISATION*/
 .local {
   display: flex;
   justify-content: center;
-  background-color: #f3f3f3;
+  background-color: #e6e6e6;
 }
 .local__icon {
   font-size: 1.3em;
@@ -137,6 +160,8 @@ footer {
 .container-info {
   display: flex;
   justify-content: center;
+  background-color: #f3f3f3;
+  padding: 2.5rem 0 4rem 0;
 }
 
 .info {
@@ -158,9 +183,27 @@ footer {
 .tuto {
   width: 100%;
 }
+@media screen and (min-width: 1024px) and (max-width: 1349px) {
+  .tuto {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .tuto {
+    width: 70%;
+    margin: auto;
+  }
+}
 .tuto ol {
   padding: 0;
   margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .tuto ol {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .tuto ol li {
   margin: 1.5em;
@@ -168,6 +211,11 @@ footer {
   border-radius: 15px;
   background-color: #f3f3f3;
   max-width: 1024px;
+}
+@media screen and (min-width: 1024px) {
+  .tuto ol li {
+    width: 400px;
+  }
 }
 .tuto__icon {
   margin-right: 1rem;
@@ -182,6 +230,22 @@ footer {
 }
 .restaurant__block {
   margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__block {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1349px) {
+  .restaurant__block {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__container {
+    margin: auto;
+    display: flex;
+  }
 }
 
 .card {
@@ -212,10 +276,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.card__icon {
-  font-size: 2rem;
-  margin: 1rem 1.5rem 1rem 0;
-}
 .card__badge {
   background-color: #99e2d0;
   padding: 0.5rem 1rem 0.5rem 1rem;
@@ -235,6 +295,16 @@ footer {
   position: relative;
   top: 25rem;
 }
+@media screen and (min-width: 1024px) and (max-width: 1349px) {
+  .container-menu {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .container-menu {
+    width: 70%;
+  }
+}
 .container-menu h3 {
   font-weight: lighter;
   margin-top: 20px;
@@ -244,16 +314,21 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.title__icon {
-  font-size: 1.4rem;
-  margin: 1rem 1.5rem 0 0;
-}
 .title h2 {
   font-family: "Shrinkhand";
+  padding-left: 1rem;
 }
 
 .menus {
   width: 95%;
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .menus {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-content: center;
+  }
 }
 .menus__title {
   margin-bottom: 0.2rem;
@@ -278,9 +353,11 @@ footer {
   position: relative;
   transform: scaleY(0);
 }
+.menu__text {
+  white-space: nowrap;
+}
 .menu__text h4 {
   margin: 0.5rem 0 0.5rem 0;
-  flex-wrap: nowrap;
 }
 .menu__text p {
   margin: 0.5rem 0 0.5rem 0;
@@ -346,6 +423,11 @@ footer {
   justify-content: center;
   align-items: center;
   color: #99e2d0;
+}
+
+.card__icon, .title__icon {
+  font-size: 2rem;
+  margin: 1rem 1.5rem 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
