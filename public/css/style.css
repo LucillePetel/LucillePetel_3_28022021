@@ -339,6 +339,11 @@ footer {
   width: 45px;
   background-color: #99e2d0;
 }
+.menus__box {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
 
 .menu {
   box-shadow: 0.1rem 0.1rem 1rem 0.5rem #cccccc;
@@ -355,6 +360,8 @@ footer {
 }
 .menu__text {
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__text h4 {
   margin: 0.5rem 0 0.5rem 0;
