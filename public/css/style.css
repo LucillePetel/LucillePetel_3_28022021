@@ -198,6 +198,7 @@ footer {
 .tuto ol {
   padding: 0;
   margin: 0;
+  counter-reset: tutoList;
 }
 @media screen and (min-width: 1024px) {
   .tuto ol {
@@ -207,18 +208,40 @@ footer {
 }
 .tuto ol li {
   margin: 1.5em;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px 15px 30px;
   border-radius: 15px;
   background-color: #f3f3f3;
   max-width: 1024px;
+  font-weight: 700;
+  list-style: none;
+  counter-increment: tutoList;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .tuto ol li {
     width: 400px;
   }
 }
+.tuto ol li:before {
+  counter-increment: tutoList 0;
+  content: counter(tutoList);
+  background: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.8rem;
+}
+.tuto ol li:hover {
+  background-color: #e1d1f5;
+}
 .tuto__icon {
   margin-right: 1rem;
+  color: #747474;
 }
 
 /*LISTE DES RESTAURANTS*/
@@ -240,6 +263,9 @@ footer {
   .restaurant__block {
     width: 95%;
   }
+}
+.restaurant__container a {
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .restaurant__container {
