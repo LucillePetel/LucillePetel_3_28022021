@@ -59,7 +59,6 @@
 .menu {
     box-shadow: 0.1rem 0.1rem 1rem 0.5rem #cccccc;
     display: flex;
-    justify-content: space-between;
     padding-left: 1.2rem;
     margin-top: 1.5rem;
     border-radius: 1.1rem;
@@ -69,21 +68,28 @@
     position: relative;
     transform: scaleY(0);
     &__text {
+        width: 85%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
 
         h4{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             margin: 0.5rem 0 0.5rem 0;
         }
         p {
-            margin: 0.5rem 0 0.5rem 0; 
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: 0.5rem 0.5rem 1rem 0; 
         }
     }
     &__price {
-        position: absolute;
-        bottom: 0;
-        right: 1.5rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         font-weight: 650;
         transition-duration: 0.5s;
     }
@@ -93,7 +99,7 @@
         transform: scaleY(1);
     }
     &:hover .menu__price {
-        margin-right: 3.5rem;
+        margin-right: 2rem;
         transition-duration: 0.5s;
     }
     &:hover .menuCheck__icon{
@@ -122,12 +128,12 @@
 
 .menuCheck {
     background-color: $colour-tertiary;
-    width: 3.5rem;
+    width: 4.5rem;
     border-radius: 0 1.1rem 1.1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(3.5rem);
+    transform: translateX(4.5rem);
     transition-duration: 0.5s;
     &__icon {
         border-radius: 2rem;

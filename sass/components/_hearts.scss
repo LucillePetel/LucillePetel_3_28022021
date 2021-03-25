@@ -1,6 +1,26 @@
-.card, .title{
-    &__icon {
-        font-size: 2rem;
-        margin: 1rem 1.5rem 1rem 0;
+.heart{
+    font-size: 2rem;
+    margin: 1rem 1.5rem 1rem 0;
+    position: relative;
+    display: flex;
+    &__like {
+        position: absolute;
+        top: 0;
+        left: -3rem;
+        justify-content: center;
+        align-items: center;
+        &--empty {
+            opacity: 1;
+            &:hover {
+                opacity: 0;
+            }
+        }
+        &--full {
+            opacity: 0;
+            transition: 0.5s;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }

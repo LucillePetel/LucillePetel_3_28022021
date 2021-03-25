@@ -21,3 +21,24 @@
     }
 }
 
+@keyframes load {
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }    
+}
+
+@keyframes load-move{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0.5rem);
+    }
+    75% {
+        transform: translateY(-0.5rem);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
