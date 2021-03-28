@@ -409,6 +409,11 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .menu__text {
+    width: 100%;
+  }
+}
 .menu__text h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -485,12 +490,12 @@ footer {
 }
 
 .heart {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 1rem 1.5rem 1rem 0;
   position: relative;
-  display: flex;
 }
 .heart__like {
+  display: flex;
   position: absolute;
   top: 0;
   left: -3rem;
@@ -500,15 +505,16 @@ footer {
 .heart__like--empty {
   opacity: 1;
 }
-.heart__like--empty:hover {
-  opacity: 0;
-}
 .heart__like--full {
   opacity: 0;
-  transition: 0.5s;
+  background: linear-gradient(10deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.4s;
 }
 .heart__like--full:hover {
   opacity: 1;
+  transform: scale(1.07);
 }
 
 .loader {
