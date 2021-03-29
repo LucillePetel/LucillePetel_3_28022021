@@ -5,11 +5,11 @@
     justify-content: center;
     background-color: darken($colour-background, 5%);
     &__icon {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin: 1.2rem 0.9rem 1.2rem 0
     }
     &__text {
-        font-size: 1.15em;
+        font-size: 1.05em;
         font-weight: bold;
         }
 }
@@ -21,7 +21,6 @@
     justify-content: center;
     background-color: $colour-background;
     padding: 2.5rem 0 4rem 0;
-
 }
 
 
@@ -31,8 +30,13 @@
     align-items: center;
     h2, p {
        flex-wrap: wrap;
-       width: 90%;
+       width: 79%;
        text-align: center; 
+       margin: 0.5rem 0 0.5rem 0;
+       @media screen and (min-width: 760px) {
+            flex-wrap: nowrap;
+            width: 100%;    
+       }
     }
 }
 

@@ -33,8 +33,8 @@ a {
 .button {
   background-color: #ff79da;
   background: linear-gradient(#ff79da, #9356dc);
-  padding: 0.8rem 3.2rem 0.8rem 3.2rem;
-  margin-top: 2rem;
+  padding: 0.8rem 2.2rem 0.8rem 2.2rem;
+  margin-top: 1.5rem;
   border-radius: 30px;
   font-size: 1.1em;
   color: #fff;
@@ -168,11 +168,11 @@ footer {
   background-color: #e6e6e6;
 }
 .local__icon {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin: 1.2rem 0.9rem 1.2rem 0;
 }
 .local__text {
-  font-size: 1.15em;
+  font-size: 1.05em;
   font-weight: bold;
 }
 
@@ -191,8 +191,15 @@ footer {
 }
 .info h2, .info p {
   flex-wrap: wrap;
-  width: 90%;
+  width: 79%;
   text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+@media screen and (min-width: 760px) {
+  .info h2, .info p {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 
 /*TUTO*/
@@ -418,7 +425,7 @@ footer {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem 0;
 }
 .menu__text p {
   white-space: nowrap;
