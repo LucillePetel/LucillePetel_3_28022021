@@ -7,6 +7,9 @@
     font-size: 1.1em;
     color: $colour-white;
     transition: transform 0.7s;
+    @media screen and (min-width: 1350px) {
+        margin-top: 4rem;
+    }
     &:hover {
         opacity: 0.9;
         transform: scale(1.05);

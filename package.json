@@ -4,7 +4,7 @@
   "description": "LucillePetel_3_28022021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css ./sass/page.scss:./public/css/stylepage.css",    
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
@@ -19,3 +19,4 @@
   },
   "homepage": "https://github.com/LucillePetel/LucillePetel_3_28022021#readme"
 }
+

@@ -166,180 +166,165 @@ footer {
   }
 }
 
-/*LOCALISATION*/
-.local {
-  display: flex;
-  justify-content: center;
-  background-color: #e6e6e6;
-}
-.local__icon {
-  font-size: 1.2em;
-  margin: 1.2rem 0.9rem 1.2rem 0;
-}
-.local__text {
-  font-size: 1.05em;
-  font-weight: bold;
-}
-
-/*INFO*/
-.container-info {
-  display: flex;
-  justify-content: center;
-  background-color: #f3f3f3;
-  padding: 2.5rem 0 4rem 0;
-}
-
-.info {
+.container-menu {
+  border-radius: 2rem 2rem 0 0;
+  padding: 25px 10px 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.info h2, .info p {
-  flex-wrap: wrap;
-  width: 79%;
-  text-align: center;
-  margin: 0.5rem 0 0.5rem 0;
-}
-@media screen and (min-width: 760px) {
-  .info h2, .info p {
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-}
-
-/*TUTO*/
-.container-tuto {
-  padding: 2rem 1rem 2rem 1rem;
-}
-
-.tuto {
-  width: 100%;
+  background-color: #f3f3f3;
+  width: 96%;
+  position: relative;
+  top: 25rem;
 }
 @media screen and (min-width: 1024px) and (max-width: 1349px) {
-  .tuto {
+  .container-menu {
     width: 95%;
-    margin: auto;
   }
 }
 @media screen and (min-width: 1350px) {
-  .tuto {
+  .container-menu {
     width: 70%;
-    margin: auto;
+    height: 35rem;
   }
 }
-.tuto ol {
-  padding: 0;
-  margin: 0;
-  counter-reset: tutoList;
-}
-@media screen and (min-width: 1024px) {
-  .tuto ol {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.tuto ol li {
-  margin: 1.5em;
-  padding: 15px 20px 15px 30px;
-  border-radius: 15px;
-  background-color: #f3f3f3;
-  max-width: 1024px;
-  font-weight: 700;
-  list-style: none;
-  counter-increment: tutoList;
-  position: relative;
-}
-@media screen and (min-width: 1024px) {
-  .tuto ol li {
-    width: 400px;
-  }
-}
-.tuto ol li:before {
-  counter-increment: tutoList 0;
-  content: counter(tutoList);
-  background: #9356dc;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: absolute;
-  left: -0.8rem;
-}
-.tuto ol li:hover {
-  background-color: #e1d1f5;
-}
-.tuto__icon {
-  margin-right: 1rem;
-  color: #747474;
+.container-menu h3 {
+  font-weight: lighter;
+  margin-top: 20px;
 }
 
-/*LISTE DES RESTAURANTS*/
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  background-color: #f3f3f3;
-  padding: 0 1rem 2rem 1rem;
-}
-.restaurant__block {
-  margin: auto;
-}
-@media screen and (min-width: 1024px) {
-  .restaurant__block {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1349px) {
-  .restaurant__block {
-    width: 95%;
-  }
-}
-.restaurant__container a {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .restaurant__container {
-    margin: auto;
-    display: flex;
-  }
-}
-
-.card {
-  max-width: 1024px;
-  border-radius: 1rem;
-  margin: 25px 0.5rem 25px 0.5rem;
-  background-color: #fff;
-  color: #000000;
-  position: relative;
-}
-.card img {
-  height: 170px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.card figure {
-  margin: 0;
-}
-.card__text {
-  padding: 0.5rem;
-}
-.card__text h3, .card__text p {
-  margin: 0.3rem 0 0.3rem 1rem;
-  font-size: 1.2rem;
-}
-.card__box {
+.title {
   display: flex;
   justify-content: space-between;
 }
-.card__badge {
+.title h2 {
+  font-family: "Shrinkhand";
+  padding-left: 1rem;
+}
+
+.menus {
+  width: 95%;
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .menus {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    justify-content: center;
+  }
+}
+.menus__title {
+  margin-bottom: 0.2rem;
+}
+.menus__border {
+  margin-top: 4px;
+  height: 4px;
+  width: 45px;
   background-color: #99e2d0;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+}
+.menus__box {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.menu {
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #cccccc;
+  display: flex;
+  padding-left: 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 1.1rem;
+  background-color: #fff;
+  color: #000000;
+  overflow: hidden;
+  position: relative;
+  transform: scaleY(0);
+}
+.menu__text {
+  cursor: pointer;
+  width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .menu__text {
+    width: 100%;
+  }
+}
+.menu__text h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 1rem 0 0.5rem 0;
+}
+.menu__text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0.5rem 0.5rem 1rem 0;
+}
+.menu__price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-weight: 650;
+  transition-duration: 0.5s;
+}
+.menu:hover .menuCheck {
+  transform: translateX(0rem);
+  transition: transform 0.5s;
+  transform: scaleY(1);
+}
+.menu:hover .menu__price {
+  margin-right: 2rem;
+  transition-duration: 0.5s;
+}
+.menu:hover .menuCheck__icon {
+  transform: rotate(2turn);
+  transition-duration: 0.5s;
+}
+
+.delay-first {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0s;
+}
+
+.delay-second {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.2s;
+}
+
+.delay-third {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.4s;
+}
+
+.delay-fourth {
+  animation: meal-appear 0.3s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.menuCheck {
+  background-color: #99e2d0;
+  width: 4.5rem;
+  border-radius: 0 1.1rem 1.1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(4.5rem);
+  transition-duration: 0.5s;
+}
+.menuCheck__icon {
+  border-radius: 2rem;
+  background-color: #fff;
+  font-size: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99e2d0;
 }
 
 .heart {
@@ -408,4 +393,4 @@ footer {
   animation-delay: 0.2s;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylepage.css.map */
