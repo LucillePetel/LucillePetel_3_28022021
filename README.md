@@ -7,16 +7,16 @@ Debut du projet le 28/02/2021
 
 ### Objectifs 
 
-En suivant le brief et les maquettes fournis, l'objectif était de developper un site proposant le menu de 4 grands restaurants parisiens ainsi que de permettre Permettre la reservation en ligne et la composition de menus. 
+En suivant le brief et les maquettes fournis, l'objectif était de developper un site proposant le menu de 4 grands restaurants parisiens ainsi que de permettre la reservation en ligne et la composition de menus. 
 
 ### Technologies 
 
-- [ ] HTML 
-- [ ] CSS
-- [ ] Sass
+- [x] HTML 
+- [x] CSS
+- [x] Sass
 
-- [x] JavaScript 
-- [x] Frameworks 
+- [ ] JavaScript 
+- [ ] Frameworks 
 
 ### Resultat du projet 
 
